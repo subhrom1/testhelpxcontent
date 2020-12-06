@@ -1,0 +1,14 @@
+#
+# helix configuration for local development
+#
+version: 1
+
+definitions:
+  defaults:
+    - &defaultRepo https://github.com/subhrom1/testhelpxcontent.git#master
+
+strains:
+  - name: default
+    code: *defaultRepo
+    content:  https://github.com/subhrom1/testhelpxcontent.git#master
+    static: https://github.com/subhrom1/testhelpxcontent.git/htdocs#master
